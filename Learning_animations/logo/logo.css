@@ -1,0 +1,37 @@
+/* css variables for storage , the var variable used under the item 
+:root { --box-unit: 100px */
+body{
+    background: black;
+}
+.box{
+    width: 30px;
+    height: 30px;
+    animation: box-logo 2s ease-in-out 1s infinite alternate;
+   /* prefixes for browser compactibility (ios &tablets ) -webkit-animation: box-logo 2s ease-in-out 1s infinite alternate; */
+    /* (firefox) -moz-animation: box-logo 2s ease-in-out 1s infinite alternate; */
+    /* (microsoft) -ms-animation: box-logo 2s ease-in-out 1s infinite alternate; */
+    /* (oper) -0-animation: box-logo 2s ease-in-out 1s infinite alternate; */
+}
+.red-box{
+    background-color: red;
+    margin: 0;
+    
+}
+.blue-box{
+    background: blue;
+    margin: 0;
+   
+}
+
+.green-box{
+    background: green;
+    margin: 0;
+    
+}
+.yellow-box{
+    background: yellow;
+    margin: 0;
+}
+@keyframes box-logo {
+    100% {transform: translate(50vh,50vw) scaleX(10) skewY(60deg)}
+}

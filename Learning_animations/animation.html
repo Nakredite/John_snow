@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice animation</title>
+    <style>
+      p {
+        height: 150px;
+        width: 100px;
+        background-color: red;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        margin-left: 400px;
+        padding: 2px;
+        animation: jean 5s 2s;
+        animation-iteration-count: 3;
+        animation-fill-mode: forwards;
+        animation-direction: alternate-reverse;
+      }
+      p:hover {
+      }
+      @keyframes jean {
+        0% {
+          transform: translateX(-400px);
+          background-color: red;
+          color: transperent;
+          border-radius: 10px;
+        }
+        100% {
+          transform: translateX(0px);
+          background-color: blue;
+          color: transperent;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet jojn kop
+      coler
+    </p>
+  </body>
+</html>

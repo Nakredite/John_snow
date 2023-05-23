@@ -1,0 +1,93 @@
+.box{
+    width: 50px;
+    height: 50px;
+    background: red;
+    border: 1px solid black;  
+    -webkit-animation-name: note 3s 1s ease-in-out alternate infinite;
+    -moz-animation-name: note 3s 1s ease-in-out alternate infinite;
+    -ms-animation-name: note 3s 1s ease-in-out alternate infinite;
+    -o-animation-name: note 3s 1s ease-in-out alternate infinite;
+    
+
+}
+@keyframes note {
+    from {width: 100px;height: 100px; background:blue;}
+    to {width: 10px;height:10px; background:red; border-radius:5px;}
+}
+
+.box-second {
+    /* width: 10px;
+    height: 10px;
+    background: blue;
+    border: 1px solid black;
+    animation: super 2s ease-out 0s 4 alternate;
+    /* animation-fill-mode: both; */
+}
+
+
+
+@keyframes super {
+    0%{width: 10px; height: 10px; background: blue;}
+    50%{width: 20px; height: 20px; background: red;}
+    100%{width: 50px; height: 50px; background: green;} */
+}
+
+.flex {
+    background: url("pexels-pixabay-268533.jpg");
+     height: 150px; 
+    width: 150px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   -webkit-animation-name: flex 1.5s ease-out 4 2s;
+   -moz-animation-name: flex 1.5s ease-out 4 2s;
+   -ms-animation-name: flex 1.5s ease-out 4 2s;
+   -o-animation-name: flex 1.5s ease-out 4 2s;
+   
+
+}
+.great {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-size: 4em; */
+    -webkit-animation: great 1s ease-out 4 2s;
+    -ms-animation: great 1s ease-out 4 2s;
+    -moz-animation: great 1s ease-out 4 2s;
+    -o-animation: great 1s ease-out 4 2s;
+    
+    }
+
+@keyframes flex {
+    from{opacity:0; width:0;}
+    to{opacity:100; width:100px}
+}
+
+@keyframes great {
+    from{opacity:0;}
+    to{opacity:100;}
+}
+
+.scale-box{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50% );
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: red;
+    border: 1px solid black;
+    animation-name: transform;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes transform {
+    /* 100% {transform: scaleX(2) scaleY(4);} */
+    /* 100% {transform: scaleX(0.5) scalesY(0,5) rotate (45deg) translateX (50px) */
+    /* 100% {transform: translateY(25px,12.5px); */
+        /* 100% {transform: skewY(180deg);} */
+        100% {transform: rotate(180deg);}
+    
+
+
+    
